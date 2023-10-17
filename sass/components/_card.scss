@@ -1,0 +1,42 @@
+.card {
+  border: 0px;
+  box-shadow: 0 4px 6px rgba(138, 137, 137, 0.1);
+  background-color: rgb(241, 241, 241);
+  border-radius: 0px;
+  border-right: 20px solid lightseagreen;
+}
+
+.card:hover {
+  transition: all 700ms ease-in-out;
+  border-right: 20px solid orange;
+}
+
+.card_img {
+  height: auto;
+  max-width: 30%;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0px;
+  border-left: 1px solid rgba(156, 156, 156, 0.945);
+}
+
+.title-card {
+  padding: 10px;
+  text-align: center;
+  font-family: "Monserrat";
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    45deg,
+    rgba(228, 228, 228, 0.5),
+    rgba(116, 116, 116, 0.5),
+    rgba(228, 228, 228, 0.5)
+  ); /* Establece la imagen de borde con un degradado */
+  border-image-slice: 1;
+  font-size: 30px;
+}
+
+.bold-font {
+  font-weight: bold;
+}

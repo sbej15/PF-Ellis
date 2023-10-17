@@ -1,0 +1,65 @@
+header {
+  top: 0px;
+  font-size: 1rem;
+  color: white;
+  padding: 1.4rem;
+  height: 80px;
+}
+
+.site-header__logo-width,
+.site-header__logo {
+  width: 100px;
+}
+
+.site-header__logo {
+  height: 90px;
+  width: 100px;
+  padding: 0;
+  border-radius: 80%;
+}
+.site-header__logo:hover {
+  scale: 1.1;
+}
+
+nav {
+  font-size: 20px;
+  line-height: 80px;
+}
+
+.site-header__nav--current {
+  border-bottom: 2px orange solid;
+}
+
+nav {
+  a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px lightseagreen solid;
+    padding-bottom: 0.25rem;
+    transition: all 200ms ease-in-out;
+    line-height: normal;
+  }
+}
+
+nav {
+  a:not(.site-header__nav--current):hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px whitesmoke solid;
+  }
+}
+
+nav {
+  a:not(:first-child) {
+    margin-left: 3rem;
+  }
+}
+
+.navbar-brand{
+  border-bottom: 0px;
+
+  
+}
+
+.navbar-brand:hover{
+  border-bottom: 0px !important;
+}

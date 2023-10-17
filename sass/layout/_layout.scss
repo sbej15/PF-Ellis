@@ -1,0 +1,83 @@
+article {
+  background: linear-gradient(to bottom, rgb(53, 53, 53), rgb(37, 37, 37));
+  border-radius: 20px;
+  padding: 40px;
+  border: 0.02px rgba(236, 236, 236, 0.568) solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+article {
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+
+.container {
+  color: white;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+p {
+  font-size: larger;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.container-image {
+  margin-top: 30px;
+  max-width: 90%;
+}
+
+#title-about-us {
+  text-transform: capitalize;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 110px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(78, 78, 78, 0),
+    0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+#title {
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(78, 78, 78, 0),
+    0 0 6px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Aplica un desenfoque a las imágenes con la clase .img-blur cuando no haces hover en ellas */
+.body__img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transform: scale(1); /* Establece la escala normal para las imágenes */
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
+  }
+}
+
+.body__gallery {
+  margin-top: 20vh;
+}
+
+.body__background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)),
+    url("../assets/img/cat-blue-eyes-4k-wallpaper-374a.jpg");
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.narrow-paragraph {
+  max-width: 700px; /* Ajusta el valor según tu preferencia */
+  margin: 0 auto;
+}
+
+.error-code{
+  font-size: 10rem !important;
+}

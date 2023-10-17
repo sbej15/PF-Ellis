@@ -1,0 +1,10 @@
+@import "../mixins/mixins";
+
+.button-main {
+  @include button;
+}
+
+.button-main:hover {
+  background: rgba(44, 44, 44, 0.733);
+  border-color: orange;
+}

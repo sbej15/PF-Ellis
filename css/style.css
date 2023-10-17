@@ -1,0 +1,340 @@
+@charset "UTF-8";
+footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.822), rgb(0, 0, 0));
+  color: whitesmoke;
+  position: relative;
+  height: 17%;
+  width: 100%; /* Ancho completo */
+  bottom: 0;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer h4 {
+  font-size: 25px;
+  font-family: "Dancing Script", sans-serif;
+}
+
+footer div {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+article {
+  background: linear-gradient(to bottom, rgb(53, 53, 53), rgb(37, 37, 37));
+  border-radius: 20px;
+  padding: 40px;
+  border: 0.02px rgba(236, 236, 236, 0.568) solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+article p {
+  margin-bottom: 20px;
+}
+
+.container {
+  color: white;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+p {
+  font-size: larger;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.container-image {
+  margin-top: 30px;
+  max-width: 90%;
+}
+
+#title-about-us {
+  text-transform: capitalize;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 110px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(78, 78, 78, 0), 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+#title {
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(78, 78, 78, 0), 0 0 6px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Aplica un desenfoque a las imágenes con la clase .img-blur cuando no haces hover en ellas */
+.body__img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transform: scale(1); /* Establece la escala normal para las imágenes */
+}
+.body__img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.body__gallery {
+  margin-top: 20vh;
+}
+
+.body__background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url("../assets/img/cat-blue-eyes-4k-wallpaper-374a.jpg");
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.narrow-paragraph {
+  max-width: 700px; /* Ajusta el valor según tu preferencia */
+  margin: 0 auto;
+}
+
+.error-code {
+  font-size: 10rem !important;
+}
+
+header {
+  top: 0px;
+  font-size: 1rem;
+  color: white;
+  padding: 1.4rem;
+  height: 80px;
+}
+
+.site-header__logo-width,
+.site-header__logo {
+  width: 100px;
+}
+
+.site-header__logo {
+  height: 90px;
+  width: 100px;
+  padding: 0;
+  border-radius: 80%;
+}
+
+.site-header__logo:hover {
+  scale: 1.1;
+}
+
+nav {
+  font-size: 20px;
+  line-height: 80px;
+}
+
+.site-header__nav--current {
+  border-bottom: 2px orange solid;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px lightseagreen solid;
+  padding-bottom: 0.25rem;
+  transition: all 200ms ease-in-out;
+  line-height: normal;
+}
+
+nav a:not(.site-header__nav--current):hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px whitesmoke solid;
+}
+
+nav a:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.navbar-brand {
+  border-bottom: 0px;
+}
+
+.navbar-brand:hover {
+  border-bottom: 0px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+.button-main {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.507);
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 100px;
+  border-color: lightseagreen;
+  border-style: solid;
+  border-width: 2px;
+  transition: all 100ms ease-in;
+  width: fit-content;
+}
+
+.button-main:hover {
+  background: rgba(44, 44, 44, 0.733);
+  border-color: orange;
+}
+
+.formulario {
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 20px;
+  width: 100%;
+  color: rgb(255, 253, 253);
+  background: local;
+  border-style: none;
+  border-bottom: 3px lightseagreen solid;
+}
+
+form {
+  text-align: initial;
+  max-width: 60%;
+}
+
+input[type=submit] {
+  display: block;
+  margin: 75px auto 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 3px orange solid;
+}
+
+@media (max-width: 1200px) {
+  #title {
+    font-size: 70px;
+  }
+  #title-about-us {
+    font-size: 70px;
+  }
+  div p {
+    font-size: medium;
+  }
+  .formulario {
+    font-size: medium;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 770px) {
+  h3 {
+    font-size: 30px !important;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  #title {
+    font-size: 50px;
+  }
+  #title-about-us {
+    font-size: 50px;
+  }
+  div p {
+    font-size: medium;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  .card-text {
+    font-size: 9px;
+  }
+  .error-code {
+    font-size: 8rem !important;
+  }
+}
+@media (max-width: 400px) {
+  #title {
+    font-size: 30px;
+  }
+  #title-about-us {
+    font-size: 30px;
+  }
+  div p {
+    font-size: small;
+  }
+  .button-main {
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .formulario {
+    font-size: small;
+  }
+  h3 {
+    font-size: 10px !important;
+  }
+  .card-text {
+    font-size: 8px;
+  }
+  .card {
+    border: 0px;
+  }
+  .site-header__logo {
+    height: 70px;
+    width: 80px;
+  }
+  .error-code {
+    font-size: 6rem !important;
+  }
+}
+.card {
+  border: 0px;
+  box-shadow: 0 4px 6px rgba(138, 137, 137, 0.1);
+  background-color: rgb(241, 241, 241);
+  border-radius: 0px;
+  border-right: 20px solid lightseagreen;
+}
+
+.card:hover {
+  transition: all 700ms ease-in-out;
+  border-right: 20px solid orange;
+}
+
+.card_img {
+  height: auto;
+  max-width: 30%;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0px;
+  border-left: 1px solid rgba(156, 156, 156, 0.945);
+}
+
+.title-card {
+  padding: 10px;
+  text-align: center;
+  font-family: "Monserrat";
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(45deg, rgba(228, 228, 228, 0.5), rgba(116, 116, 116, 0.5), rgba(228, 228, 228, 0.5)); /* Establece la imagen de borde con un degradado */
+  border-image-slice: 1;
+  font-size: 30px;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
